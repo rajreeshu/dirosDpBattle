@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+<IfModule mod_php5.c>
+  php_value memory_limit 256M
+  php_value post_max_size 250M
+  php_value upload_max_filesize 250M
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

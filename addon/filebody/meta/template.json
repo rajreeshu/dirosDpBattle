@@ -1,0 +1,119 @@
+{
+	"id": "4357",
+	"name": "competitionSignUpLeadPage", 
+	"mobile": true, 
+	"notes": "Version 1.1", 
+	"syntax": 4,
+	"version": 1.1,
+	"style": {
+		"html": "",
+		"replacements":[ 
+		{
+		"type":"color", 
+		"name":"Font Color", 
+		"find":"#fffffe"
+		}, 
+		{
+		"type":"color", 
+		"name":"Countdown BG", 
+		"find":"#fffffd"
+		},
+		{
+		"type":"color", 
+		"name":"Countdown Font", 
+		"find":"#020200"
+		},
+		{
+		"type":"color", 
+		"name":"Countdown Label", 
+		"find":"#fffffc"
+		},
+		{
+		"type":"color", 
+		"name":"Button/Link Color", 
+		"find":"#f9c148"
+		},
+		{
+		"type":"color", 
+		"name":"Button:hover Color", 
+		"find":"#deac41"
+		},
+		{
+		"type":"color", 
+		"name":"Button Font", 
+		"find":"#020201"
+		},
+		{
+		"type":"color", 
+		"name":"Page BG", 
+		"find":"#020202"
+		}, 
+		{
+		"type":"color", 
+		"name":"Column 1 BG", 
+		"find":"#1c1c1c"
+		}, 
+		{
+		"type":"color", 
+		"name":"Column 2 BG", 
+		"find":"#121212"
+		}]
+	},
+	"elements":[{"id":"competition-page_0_Page-Content_container", "name":"Page Content", "type":"container"},{"id":"competition-page_1_Background-Image_container", "name":"Background Image", "type":"container"},{"id":"competition-page_2_Image_background-image", "name":"Image", "type":"background-image"},{"id":"competition-page_3_Column-1_container", "name":"Column 1", "type":"container"},{"id":"competition-page_4_Mobile-Logo_image", "name":"Mobile Logo", "type":"image", "comment":"Choose Image", "data":{"max-width":225, "max-height":135} },{"id":"competition-page_5_Image_image", "name":"Image", "type":"image", "comment":"Choose Image", "data":{"max-width":470, "max-height":632}},{"id":"competition-page_6_Title_text", "name":"Title", "type":"text"},{"id":"competition-page_7_Text_text", "name":"Text", "type":"text"},{"id":"competition-page_8_Column-2_container", "name":"Column 2", "type":"container"},{"id":"competition-page_9_Logo_image", "name":"Logo", "type":"image", "comment":"Choose Image", "data":{"max-width":225, "max-height":135}},{"id":"competition-page_10_Title_text", "name":"Title", "type":"text"},{"id":"competition-page_11_Countdown_countdown", "name":"Countdown", "type":"countdown"},{"id":"competition-page_12_Countdown-Labels_container", "name":"Countdown Labels", "type":"container"},{"id":"competition-page_13_Days_text", "name":"Days", "type":"text"},{"id":"competition-page_14_Hours_text", "name":"Hours", "type":"text"},{"id":"competition-page_15_Minutes_text", "name":"Minutes", "type":"text"},{"id":"competition-page_16_Seconds_text", "name":"Seconds", "type":"text"},{"id":"competition-page_17_Subtitle-#1_text", "name":"Subtitle #1", "type":"text"},{"id":"competition-page_18_Button_link", "name":"Button", "type":"link"},{"id":"competition-page_19_Subtitle-#2_text", "name":"Subtitle #2", "type":"text"},{"id":"competition-page_20_Text_text", "name":"Text", "type":"text"},{"id":"competition-page_21_Like-Button_dynamic", "name":"Like Button", "type":"dynamic","data": { "variables": ["likeButton"] }},{"id":"competition-page_22_Divider_container", "name":"Divider", "type":"container"},{"id":"competition-page_23_Subtitle-#3_text", "name":"Subtitle #3", "type":"text"},{"id":"competition-page_24_Text_text", "name":"Text", "type":"text"},{"id":"competition-page_25_Social_container", "name":"Social", "type":"container"},{"id":"competition-page_26_Facebook_container", "name":"Facebook", "type":"container"},{"id":"competition-page_27_Facebook-Share_dynamic", "name":"Facebook Share", "type":"dynamic","data": { "variables": ["facebookShareURL"] }},{"id":"competition-page_28_Twitter_container", "name":"Twitter", "type":"container"},{"id":"competition-page_29_Twitter-Share_dynamic", "name":"Twitter Share", "type":"dynamic","data": { "variables": ["twitterShareURL"] }},{"id":"competition-page_30_Google-Plus_container", "name":"Google Plus", "type":"container"},{"id":"competition-page_31_Google-Share_dynamic", "name":"Google Share", "type":"dynamic","data": { "variables": ["googleShareURL"] }},{"id":"competition-page_32_LinkedIn_container", "name":"LinkedIn", "type":"container"},{"id":"competition-page_33_LinkedIn-Share_dynamic", "name":"LinkedIn Share", "type":"dynamic","data": { "variables": ["linkedInShareURL"] } },{"id":"competition-page_34_Footer_container", "name":"Footer", "type":"container"},{"id":"competition-page_35_Disclaimer_text", "name":"Disclaimer", "type":"text"},{"id":"competition-page_36_Fine-Print_container", "name":"Fine Print", "type":"container"},{"id":"competition-page_37_Copyright_text", "name":"Copyright", "type":"text"},{"id":"competition-page_38_Legal_text", "name":"Legal", "type":"text"}],
+	"variables": {
+		"likeButton": {
+        "variable": "likeButton",
+        "default": "",
+        "name": "The URL to like on Facebook. Leave blank to like the current page."
+    },
+		"facebookShareURL": {
+        "variable": "facebookShareURL",
+        "default": "",
+        "name": "The URL to share on Facebook. Leave blank to share the current page."
+    },
+		"twitterShareURL": {
+        "variable": "twitterShareURL",
+        "default": "",
+        "name": "The URL to share on Twitter. Leave blank to share the current page."
+    },
+		"googleShareURL": {
+        "variable": "googleShareURL",
+        "default": "",
+        "name": "The URL to share on Google. Leave blank to share the current page."
+    },
+		"linkedInShareURL": {
+        "variable": "linkedInShareURL",
+        "default": "",
+        "name": "The URL to share on LinkedIn. Leave blank to share the current page."
+    }
+	},
+	"form": {
+        "title": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "18pt;",
+                "letter-spacing": "0em;"
+            },
+            "html": "<strong>Enter your email address below to be notified when we launch!</strong>"
+        },
+        "submit": {
+            "css": {
+                "background-color": "#ffcb01;",
+                "border-color": "#ffb403;",
+                "border-width": "0pt;",
+                "border-style": "solid;",
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "14pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "Join Now!"
+        },
+        "privacy": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "12pt;",
+                "letter-spacing": "-0.1em;"
+            }
+        }
+	}
+}
